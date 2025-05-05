@@ -1,2 +1,2 @@
 # Sankalp_Sathi
-Companion-Help for the disabled people web application
+Companion-Help for the disabled people (web application)
