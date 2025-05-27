@@ -1,0 +1,64 @@
+Build a web application for a companion assistance platform that connects users, especially those with disabilities, with verified companions for task assistance. The platform must be browser-based, responsive, and mobile-friendly, prioritizing accessibility, safety, and real-time support. Below are the detailed requirements:
+Functional Requirements
+1.User Registration and Login 
+1.Enable secure registration for users and companions.
+2.Users provide personal details, medical information, and accessibility needs.
+3.Companions submit verification details, including background checks and skill certifications (e.g., CPR training).
+4.Support caregiver-assisted registration for elderly or disabled users, linking profiles to trusted companions.
+5.Implement a secure login system with email and verified mobile number, ensuring a response time of less than 2 seconds.
+6.Example: User 'A' registers with disability details; Companion 'B' signs up with certifications; Elderly user 'C' links to a companion for emergencies.
+2.Profile Management 
+1.Allow users to create and edit profiles with personal details, preferences, disability type, and required tasks.
+2.Enable companions to add and update skills, certifications, and expiration reminders (e.g., CPR renewal).
+3.Support uploads like vaccination records for medical companions.
+4.Example: Companion adds CPR certification; User uploads medical records.
+3.Location Sharing and Companion Matching 
+1.Allow users to share live location, updating every 30 seconds during tasks, stopping when tasks are complete.
+2.Match users with nearby companions based on location, needs, and availability, displaying results in less than 3 seconds.
+3.Provide a map interface with filters (e.g., 1/3/5 mile radius) showing available companions (e.g., blue for now, yellow for later).
+4.Example: Map shows 4 companions with availability status and distance.
+4.Task Request and Assistance 
+1.Enable users to request specific tasks (e.g., "Prescription pickup at CVS #1428 by 4pm" with a photo, or recurring Tuesday therapy escorts).
+2.Allow companions to accept and complete tasks, with real-time text or voice communication.
+3.Process task requests in less than 5 seconds.
+4.Example: User submits a task with a photo; Companion accepts and communicates.
+5.Safety and Emergency Support 
+1.Implement an emergency support feature with immediate response (e.g., SOS triggered by long-pressing a button, sharing location and medical info).
+2.Include automatic fall detection alerting designated emergency contacts.
+3.Verify all companions through background checks and certifications.
+4.Example: User triggers SOS, alerting contacts with address and medical details.
+6.Accessibility Features 
+1.Provide a read-aloud feature for blind users with voice prompts (e.g., "You have 3 new requests: Swipe up for groceries"), responding in less than 1 second.
+2.Ensure the interface complies with WCAG 2.1 guidelines for accessibility.
+3.Example: Blind user navigates with voice prompts about companion proximity.
+7.Notifications 
+1.Send push notifications for companion status (e.g., "on the way," "arrived") and user requests.
+2.Notify companions of availability prompts (e.g., "Go online for 5 more jobs") in real-time.
+3.Integrate email services for monthly feedback summaries.
+4.Example: User gets "Companion Lisa is 0.5 miles away"; Companion gets a job alert.
+8.Feedback System 
+1.Allow users to rate companions (1-5 stars) with optional voice memos after tasks.
+2.Generate and email monthly feedback summaries to companions.
+3.Example: User rates a companion post-task; Companion receives a summary.
+9.Admin Panel 
+1.Enable admins to manage user and companion accounts (creation, editing, deactivation).
+2.Verify companion credentials and certifications.
+3.Monitor task requests, completions, and user feedback, handling disputes.
+4.Generate usage and performance reports.
+5.Example: Admin verifies a companion’s CPR certification and resolves a dispute.
+Non-Functional Requirements
+Performance: Ensure fast response times (login <2s, read-aloud <1s, companion display <3s, task request <5s, emergency support immediate).
+Security: Use strong authentication, data encryption, and comply with GDPR for user data privacy.
+Scalability: Support a growing user base without performance loss.
+Availability: Maintain high uptime with minimal interruptions.
+Usability: Design an intuitive, simple interface for users with varying abilities.
+Compatibility: Support multiple browsers and devices with responsive design.
+Maintainability: Allow easy updates and bug fixes with minimal downtime.
+Reliability: Ensure data integrity and prevent duplicate transactions.
+Additional Considerations
+Implement real-time updates using technologies like WebSockets.
+Integrate mapping services (e.g., Google Maps API) for location features.
+Use text-to-speech for read-aloud functionality.
+Optimize for mobile browsers, enabling companions to operate on the go.
+Store user data, task records, and feedback in a reliable database.
+This web application should empower users with disabilities by providing reliable, safe, and accessible assistance, fostering trust and independence.
